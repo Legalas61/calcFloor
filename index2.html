@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>Наименование работ</td>
+      <td>Ваши значения</td>
+      <td>Сумма</td>
+    </tr>
+    <tr>
+      <td>Установка электрических теплых полов</td>
+      <td><input class="enterData" type="text"
+                 placeholder="Введите значения"
+                 onfocus="showAddPrice(Info1Res)"
+                 onblur="hiddenAddPrice(Info1Res)"
+                 onkeyup="fun1(this.value)" maxlength="10">
+                 <span>кв.м</span>
+      </td>
+      <td class="endPrice" id="fun1Res">
+        <div class="dopInfo" id="Info1Res">
+          от 2 до 5 кв. м. - 680 руб./кв.м.<br>
+          от 5 до 10 кв.м. - 600 руб./кв.м.<br>
+          от 10 кв.м. - 550 руб./кв.м.
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Установка Инфракрасных теплых полов</td>
+      <td><input class="enterData"
+                   type="text"
+                   placeholder="Введите значения"
+                   onkeyup="fun2(this.value)"
+                   onfocus="showAddPrice(Info2Res)"
+                   onblur="hiddenAddPrice(Info2Res)"
+                   maxlength="10">
+        <span>кв.м</span>
+      </td>
+      <td class="endPrice" id="fun2Res">
+        <div class="dopInfo" id="Info2Res">
+          от 2 до 5 кв. м. - 400 руб./кв.м.<br>
+          от 5 до 10 кв.м. - 350 руб./кв.м.<br>
+          от 10 кв.м. - 300 руб./кв.м.
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Штробление под электрокабель</td>
+      <td><input class="enterData" type="text"
+                 placeholder="Введите значения"
+                 onkeyup="fun3(this.value)"
+                 onfocus="showAddPrice(Info3Res)"
+                 onblur="hiddenAddPrice(Info3Res)"
+                 maxlength="10">
+        <span style="top: 8px;">пог.м.</span>
+      </td>
+      <td class="endPrice" id="fun3Res">
+        <div class="dopInfo" id="Info3Res">250 руб./пог.м.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Монтаж кабель-канала</td>
+      <td><input class="enterData" type="text"
+                  placeholder="Введите значения"
+                  onkeyup="fun4(this.value)"
+                  onfocus="showAddPrice(Info4Res)"
+                  onblur="hiddenAddPrice(Info4Res)"
+                  maxlength="10">
+        <span style="top: 8px;">пог.м.</span>
+      </td>
+      <td class="endPrice" id="fun4Res">
+        <div class="dopInfo" id="Info4Res">
+          до 5 м.пог. - 90 руб./м.пог.<br>
+          от 5 до 10 м.пог. - 70 руб./м.пог.<br>
+          от 10 м.пог. - 60 руб./м.пог.
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Монтаж электрокабеля</td>
+      <td><input class="enterData"
+                 type="text"
+                 placeholder="Введите значения"
+                 onkeyup="fun5(this.value)"
+                 onfocus="showAddPrice(Info5Res)"
+                 onblur="hiddenAddPrice(Info5Res)"
+                 maxlength="10">
+        <span style="top: 8px;">пог.м.</span>
+      </td>
+      <td class="endPrice" id="fun5Res">
+        <div class="dopInfo" id="Info5Res">
+          до 10 пог.м. - 125 руб./м.пог.<br>
+          от 10 до 40 пог.м. - 100 руб./м.пог.<br>
+          от 40 пог.м. - 80 руб./м.пог.
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Штробление гнезда под розетку/ терморегулятор</td>
+      <td><input class="enterData" type="text"
+                 placeholder="Введите значения"
+                 onkeyup="fun6(this.value)"
+                 onfocus="showAddPrice(Info6Res)"
+                 onblur="hiddenAddPrice(Info6Res)"
+                 maxlength="10">
+        <span style="top: 17px;">шт.</span>
+      </td>
+      <td class="endPrice" id="fun6Res">
+        <div class="dopInfo" id="Info6Res">250 руб./м.пог.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Установка и подключение терморегулятора</td>
+      <td><input class="enterData" type="text"
+                 placeholder="Введите значения"
+                 onkeyup="fun7(this.value)"
+                 onfocus="showAddPrice(Info7Res)"
+                 onblur="hiddenAddPrice(Info7Res)"
+                 maxlength="10">
+        <span style="top: 8px;">шт.</span>
+      </td>
+      <td class="endPrice" id="fun7Res">
+        <div class="dopInfo" id="Info7Res">250 руб./м.пог.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Установка соединительной коробки</td>
+      <td><input class="enterData" type="text"
+                 placeholder="Введите значения"
+                 onkeyup="fun8(this.value)"
+                 onfocus="showAddPrice(Info8Res)"
+                 onblur="hiddenAddPrice(Info8Res)"
+                 maxlength="10">
+               <span style="top: 8px;">шт.</span>
+      </td>
+      <td class="endPrice" id="fun8Res">
+        <div class="dopInfo" id="Info8Res">300 руб./м.пог.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Заделка штроб</td>
+      <td><input class="enterData" type="text" placeholder="Введите значения"
+                 onkeyup="fun9(this.value)"
+                 onfocus="showAddPrice(Info9Res)"
+                 onblur="hiddenAddPrice(Info9Res)"
+                 maxlength="10">
+        <span style="top: 8px;">пог.м.</span>
+      </td>
+      <td class="endPrice" id="fun9Res">
+        <div class="dopInfo" id="Info9Res">
+          от 5 пог.м. - 100 руб./м.пог.<br>
+          от 5 до 15 пог.м. - 80 руб./м.пог.<br>
+          от 15 пог.м. - 60 руб./м.пог.
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="AllItemPrice"></div>
+  <button type="button" onclick="Calkulete()">Общая сумма заказа</button>
+  <style>
+    #fun1Res,
+    #fun2Res,
+    #fun3Res,
+    #fun4Res,
+    #fun5Res,
+    #fun6Res,
+    #fun7Res,
+    #fun8Res,
+    #fun9Res {
+      position: relative;
+    }
+
+    #fun1Res .dopInfo,
+    #fun2Res .dopInfo,
+    #fun3Res .dopInfo,
+    #fun4Res .dopInfo,
+    #fun5Res .dopInfo,
+    #fun6Res .dopInfo,
+    #fun7Res .dopInfo,
+    #fun8Res .dopInfo,
+    #fun9Res .dopInfo {
+      display: none;
+      position: absolute;
+      left: 90px;
+      top: 3px;
+      width: 300px;
+      background-color: #252F48;
+      color: #37B5A5;
+      padding: 5px;
+      -webkit-box-shadow: -1px 10px 19px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 10px 19px 0px rgba(0,0,0,0.75);
+      box-shadow: -1px 10px 19px 0px rgba(0,0,0,0.75);
+    }
+
+    .price::after {
+      content: "Руб";
+      padding-left: 5px;
+    }
+
+    input {
+      border: none;
+      background: #252F48;
+      color: #EDB749;
+    }
+
+    td {
+      position: relative;
+    }
+
+    td span {
+      position: absolute;
+      top: 5px;
+      left: 140px;
+    }
+
+    input::placeholder {
+      color: #37B5A5;
+    }
+
+    table {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+      font-size: 14px;
+      width: 640px;
+      text-align: left;
+      border-collapse: collapse;
+      background: #252F48;
+      margin: 10px;
+    }
+
+    table th {
+      color: #EDB749;
+      border-bottom: 1px solid #37B5A5;
+      padding: 12px 17px;
+    }
+
+    table td {
+      color: #CAD4D6;
+      border-bottom: 1px solid #37B5A5;
+      border-right: 1px solid #37B5A5;
+      padding: 7px 17px;
+    }
+
+    table tr:hover td {
+      text-decoration: underline;
+    }
+
+    table tr:first-child:hover td {
+      text-decoration: none;
+    }
+  </style>
+  <script>
+
+    function fun1(e) {
+        if (e <= 5) {
+          fun1Res.innerHTML = '<div class="price">' + e *  680 +'</div>';
+      }
+        if (e >= 6 && e <= 10) {
+          fun1Res.innerHTML = '<div class="price">' + e *  600 +'</div>';
+      }
+        if (e > 10) {
+          fun1Res.innerHTML ='<div class="price">' + e *  550 +'</div>';
+      }
+    }
+
+    function fun2(e) {
+      if (e <= 5) {
+        fun2Res.innerHTML ='<div class="price">' + e *  400 +'</div>';
+      }
+      if (e >= 6 && e <= 10) {
+        fun2Res.innerHTML ='<div class="price">' + e *  350 +'</div>';
+      }
+      if (e > 10) {
+        fun2Res.innerHTML ='<div class="price">' + e *  300 +'</div>';
+      }
+    }
+
+    function fun3(e) {
+      fun3Res.innerHTML ='<div class="price">' + e *  250 +'</div>';
+    }
+
+    function fun4(e) {
+      if (e <= 5) {
+        fun4Res.innerHTML ='<div class="price">' + e *  90 +'</div>';
+      }
+      if (e >= 6 && e <= 15) {
+        fun4Res.innerHTML ='<div class="price">' + e *  80 +'</div>';
+      }
+      if (e > 16) {
+        fun4Res.innerHTML ='<div class="price">' + e *  70 +'</div>';
+      }
+    }
+
+    function fun5(e) {
+      if (e <= 10) {
+        fun5Res.innerHTML ='<div class="price">' + e *  125 +'</div>';
+      }
+      if (e >= 11 && e <= 40) {
+        fun5Res.innerHTML ='<div class="price">' + e *  100 +'</div>';
+      }
+      if (e > 40) {
+        fun5Res.innerHTML ='<div class="price">' + e *  80 +'</div>';
+      }
+    }
+
+    function fun6(e) {
+      fun6Res.innerHTML ='<div class="price">' + e *  250 +'</div>';
+    }
+
+    function fun7(e) {
+      fun7Res.innerHTML ='<div class="price">' + e *  250 +'</div>';
+    }
+
+    function fun8(e) {
+      fun8Res.innerHTML ='<div class="price">' + e *  300 +'</div>';
+    }
+
+    function fun9(e) {
+      if (e <= 5) {
+        fun9Res.innerHTML ='<div class="price">' + e *  100 +'</div>';
+      }
+      if (e >= 5 && e <= 15) {
+        fun9Res.innerHTML ='<div class="price">' + e *  80 +'</div>';
+      }
+      if (e > 15) {
+        fun9Res.innerHTML ='<div class="price">' + e *  60 +'</div>';
+      }
+    }
+    function showAddPrice(e) {
+      e.style.display = "block";
+    }
+    function hiddenAddPrice(e) {
+      e.style.display = "none";
+    }
+
+    function Calkulete() {
+      var startArr = document.querySelectorAll('.endPrice');
+      var arr = [];
+      //Избавляюсь от NaN и делаю массив для сложения
+      for (var i = 0; i < startArr.length; i++) {
+        var offNaN = parseInt(startArr[i].innerText);
+        if (isNaN(offNaN)){}else {
+          arr.push(parseInt(startArr[i].innerText));
+        }
+      }
+      // сложения массива
+      arr = arr.reduce(function(sum, elem) {
+        return sum = sum + elem;
+      })
+      var sum = parseInt(arr);
+      var finishPrice = document.querySelector('.AllItemPrice');
+      return finishPrice.innerText = sum;
+    }
+  </script>
+</body>
+
+</html>
